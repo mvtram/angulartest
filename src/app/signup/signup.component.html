@@ -1,0 +1,34 @@
+<div class=" container-fluid h-100  position">
+<p class="row  justify-content-center align-items-center " style="text-align-last: center;">
+please confirm and edit your contact information, so that we can notify you
+when you are approved for our BETA
+</p>
+</div>
+<div class=" container-fluid h-100 position">
+  <div class="row  justify-content-center align-items-center">
+
+  <form [formGroup]="signup_form">
+    <div class="form-group ">
+      <label for="name">Name</label>
+
+      <input type="text" class="form-control " readonly id="Name" placeholder="John Doe" formControlName="name">
+
+
+      <label for="Email">Email address</label>
+
+      <input type="email" class="form-control" readonly id="Email" aria-describedby="emailHelp" formControlName="email"
+       placeholder="john@requantive.com">
+
+      <label for="phone">Phone number</label>
+
+      <input type="email" class="form-control" formControlName="phone"
+        placeholder="Enter phone number">
+    </div>
+  </form>
+</div>
+</div>
+<br>
+  <div class="row  justify-content-center align-items-center">
+
+    <button type="button" class="signup btn btn-outline-danger" (click)=OnSignup()>SIGN UP</button>
+</div>
